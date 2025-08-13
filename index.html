@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Algo Arena — Sorting Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Algo Arena</h1>
+    <p>Game-like visualizer for data structures & algorithms</p>
+  </header>
+
+  <section class="controls">
+    <button id="generateBtn">🎲 Generate</button>
+    <button id="startBtn">▶ Start</button>
+    <button id="pauseBtn">⏸ Pause</button>
+    <button id="resetBtn">🔁 Reset</button>
+
+    <label>Size
+      <input id="sizeRange" type="range" min="5" max="100" value="30">
+    </label>
+    <label>Speed (ms)
+      <input id="speedRange" type="range" min="10" max="1000" value="200">
+    </label>
+    <label>Algorithm
+      <select id="algoSelect">
+        <option value="bubble">Bubble Sort</option>
+        <option value="insertion">Insertion Sort</option>
+      </select>
+    </label>
+  </section>
+
+  <main id="stage">
+    <div id="bars"></div>
+  </main>
+
+  <footer>
+    <small>Made with HTML/CSS/JS — expand with more algorithms later.</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
